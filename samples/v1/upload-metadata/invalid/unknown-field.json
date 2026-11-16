@@ -1,0 +1,15 @@
+{
+  "sent_at": 1794270060000,
+  "sdk_version": "0.1.0",
+  "schema_version": "1.0.0",
+  "app_package": "com.example.shop",
+  "app_version": "3.14.0",
+  "os_api_level": 36,
+  "dropped": {
+    "memory_overflow": 3,
+    "disk_overflow": 120,
+    "expired": 45,
+    "send_error": 7
+  },
+  "device_id": "a1b2"
+}

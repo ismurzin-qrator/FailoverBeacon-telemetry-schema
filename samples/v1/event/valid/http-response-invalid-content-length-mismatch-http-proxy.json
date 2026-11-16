@@ -1,0 +1,54 @@
+{
+  "format_version": 1,
+  "call_id": "47b5481dbefa4fa4",
+  "resend_count": 0,
+  "start_time": 1794270000000,
+  "elapsed_time": 5200,
+  "sampling_fraction": 1.0,
+  "scheme": "http",
+  "host": "api.test",
+  "port": 80,
+  "method": "GET",
+  "phase": "application",
+  "type": "http.response.invalid.content_length_mismatch",
+  "step": "response",
+  "status_code": 200,
+  "protocol": "http/1.1",
+  "server_ip": "198.18.9.1",
+  "proxy": "http",
+  "dns_addresses": [
+    "198.18.9.1"
+  ],
+  "timings": {
+    "dns": 2,
+    "connect": 20,
+    "send": 0,
+    "wait": 60,
+    "receive": 5100
+  },
+  "response_content_length": 50000,
+  "response_body_bytes": 12288,
+  "attempts": [
+    {
+      "ip": "198.18.9.1",
+      "proxy": "http",
+      "elapsed_time": 20,
+      "result": "connected"
+    }
+  ],
+  "reused_connection": false,
+  "network": {
+    "state": "connected",
+    "transport": "wifi",
+    "vpn": false,
+    "validated": true,
+    "captive_portal": false,
+    "metered": false,
+    "roaming": false,
+    "downstream_kbps": 30000,
+    "upstream_kbps": 12000,
+    "signal_strength": -50,
+    "blocked": false
+  },
+  "foreground": true
+}

@@ -1,0 +1,41 @@
+{
+  "format_version": 1,
+  "call_id": "9d8497087bddb61d",
+  "resend_count": 0,
+  "start_time": 1792682503312,
+  "elapsed_time": 0,
+  "sampling_fraction": 1.0,
+  "scheme": "http",
+  "host": "10.0.2.2",
+  "port": 8766,
+  "method": "GET",
+  "phase": "connection",
+  "type": "tcp.refused",
+  "step": "tcp",
+  "reused_connection": false,
+  "attempts": [
+    {
+      "ip": "10.0.2.2",
+      "proxy": "direct",
+      "elapsed_time": 0,
+      "result": "failed",
+      "type": "tcp.refused",
+      "step": "tcp"
+    }
+  ],
+  "network": {
+    "state": "connected",
+    "transport": "cellular",
+    "vpn": false,
+    "validated": true,
+    "captive_portal": false,
+    "metered": true,
+    "downstream_kbps": 102400,
+    "upstream_kbps": 51200,
+    "carrier": {
+      "mcc": "310",
+      "mnc": "260"
+    }
+  },
+  "foreground": true
+}

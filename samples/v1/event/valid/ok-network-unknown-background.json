@@ -1,0 +1,39 @@
+{
+  "format_version": 1,
+  "call_id": "6ffc8ed1d6ff0cb4",
+  "resend_count": 0,
+  "start_time": 1792681578650,
+  "elapsed_time": 27,
+  "sampling_fraction": 1.0,
+  "scheme": "http",
+  "host": "10.0.2.2",
+  "port": 8765,
+  "method": "GET",
+  "phase": "application",
+  "type": "ok",
+  "status_code": 200,
+  "protocol": "http/1.1",
+  "server_ip": "10.0.2.2",
+  "proxy": "direct",
+  "reused_connection": false,
+  "timings": {
+    "connect": 3,
+    "send": 0,
+    "wait": 2,
+    "receive": 15
+  },
+  "response_content_length": 4538,
+  "response_body_bytes": 0,
+  "attempts": [
+    {
+      "ip": "10.0.2.2",
+      "proxy": "direct",
+      "elapsed_time": 3,
+      "result": "connected"
+    }
+  ],
+  "network": {
+    "state": "unknown"
+  },
+  "foreground": false
+}

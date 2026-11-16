@@ -1,0 +1,53 @@
+{
+  "format_version": 1,
+  "call_id": "1f83d9abfb41bd6b",
+  "resend_count": 0,
+  "start_time": 1794270000000,
+  "elapsed_time": 37,
+  "sampling_fraction": 1.0,
+  "scheme": "https",
+  "host": "api.test",
+  "port": 443,
+  "method": "GET",
+  "phase": "connection",
+  "type": "tcp.aborted",
+  "step": "tcp",
+  "dns_addresses": [
+    "198.18.3.1"
+  ],
+  "timings": {
+    "dns": 2
+  },
+  "attempts": [
+    {
+      "ip": "198.18.3.1",
+      "proxy": "direct",
+      "elapsed_time": 35,
+      "result": "failed",
+      "type": "tcp.aborted",
+      "step": "tcp"
+    }
+  ],
+  "network": {
+    "state": "connected",
+    "transport": "cellular",
+    "vpn": false,
+    "validated": true,
+    "captive_portal": false,
+    "metered": true,
+    "roaming": true,
+    "downstream_kbps": 15000,
+    "upstream_kbps": 5000,
+    "signal_strength": -95,
+    "blocked": false,
+    "carrier": {
+      "name": "Carrier",
+      "mcc": "250",
+      "mnc": "01",
+      "carrier_id": 2032,
+      "network_type": 13
+    }
+  },
+  "reused_connection": false,
+  "foreground": true
+}

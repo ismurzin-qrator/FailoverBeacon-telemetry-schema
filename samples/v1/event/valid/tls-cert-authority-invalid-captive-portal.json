@@ -1,0 +1,46 @@
+{
+  "format_version": 1,
+  "call_id": "629a292a367cd507",
+  "resend_count": 0,
+  "start_time": 1794270000000,
+  "elapsed_time": 160,
+  "sampling_fraction": 1.0,
+  "scheme": "https",
+  "host": "api.test",
+  "port": 443,
+  "method": "GET",
+  "phase": "connection",
+  "type": "tls.cert.authority_invalid",
+  "step": "tls",
+  "dns_addresses": [
+    "192.0.2.10"
+  ],
+  "timings": {
+    "dns": 4
+  },
+  "attempts": [
+    {
+      "ip": "192.0.2.10",
+      "proxy": "direct",
+      "elapsed_time": 150,
+      "result": "failed",
+      "type": "tls.cert.authority_invalid",
+      "step": "tls"
+    }
+  ],
+  "network": {
+    "state": "connected",
+    "transport": "wifi",
+    "vpn": false,
+    "validated": false,
+    "captive_portal": true,
+    "metered": false,
+    "roaming": false,
+    "downstream_kbps": 30000,
+    "upstream_kbps": 12000,
+    "signal_strength": -50,
+    "blocked": false
+  },
+  "reused_connection": false,
+  "foreground": true
+}

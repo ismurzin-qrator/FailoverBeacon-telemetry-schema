@@ -1,0 +1,65 @@
+{
+  "format_version": 1,
+  "call_id": "e161f3da40e6e8fb",
+  "resend_count": 0,
+  "start_time": 1794260422675,
+  "elapsed_time": 10845,
+  "sampling_fraction": 1.0,
+  "scheme": "https",
+  "host": "pay1.test",
+  "port": 443,
+  "method": "GET",
+  "phase": "connection",
+  "type": "tcp.timed_out",
+  "step": "response",
+  "protocol": "h2",
+  "server_ip": "198.18.1.1",
+  "proxy": "direct",
+  "tls": {
+    "version": "TLSv1.3",
+    "cipher": "TLS_AES_256_GCM_SHA384",
+    "issuer": "CN=Failover Stand Test CA"
+  },
+  "reused_connection": false,
+  "dns_addresses": [
+    "198.18.1.1",
+    "198.18.1.3",
+    "198.18.1.4",
+    "198.18.1.2"
+  ],
+  "timings": {
+    "dns": 3,
+    "connect": 683,
+    "tls": 454,
+    "send": 40,
+    "wait": 10041
+  },
+  "attempts": [
+    {
+      "ip": "198.18.1.1",
+      "proxy": "direct",
+      "elapsed_time": 683,
+      "result": "connected"
+    },
+    {
+      "ip": "198.18.1.3",
+      "proxy": "direct",
+      "elapsed_time": 7,
+      "result": "canceled"
+    }
+  ],
+  "network": {
+    "state": "connected",
+    "transport": "wifi",
+    "vpn": false,
+    "validated": true,
+    "captive_portal": false,
+    "metered": false,
+    "roaming": false,
+    "downstream_kbps": 30000,
+    "upstream_kbps": 12000,
+    "signal_strength": -50,
+    "blocked": false
+  },
+  "foreground": true
+}

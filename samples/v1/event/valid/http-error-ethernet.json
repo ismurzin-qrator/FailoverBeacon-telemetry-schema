@@ -1,0 +1,56 @@
+{
+  "format_version": 1,
+  "call_id": "2b7e151628aed2a6",
+  "resend_count": 0,
+  "start_time": 1794270000000,
+  "elapsed_time": 180,
+  "sampling_fraction": 1.0,
+  "scheme": "https",
+  "host": "api.test",
+  "port": 443,
+  "method": "GET",
+  "phase": "application",
+  "type": "http.error",
+  "status_code": 404,
+  "protocol": "h2",
+  "server_ip": "198.18.3.1",
+  "proxy": "direct",
+  "tls": {
+    "version": "TLSv1.3",
+    "cipher": "TLS_AES_256_GCM_SHA384",
+    "issuer": "CN=Failover Stand Test CA"
+  },
+  "dns_addresses": [
+    "198.18.3.1"
+  ],
+  "timings": {
+    "dns": 1,
+    "connect": 120,
+    "tls": 80,
+    "send": 0,
+    "wait": 55,
+    "receive": 2
+  },
+  "response_content_length": 0,
+  "response_body_bytes": 0,
+  "attempts": [
+    {
+      "ip": "198.18.3.1",
+      "proxy": "direct",
+      "elapsed_time": 120,
+      "result": "connected"
+    }
+  ],
+  "network": {
+    "state": "connected",
+    "transport": "ethernet",
+    "vpn": false,
+    "validated": true,
+    "captive_portal": false,
+    "metered": false,
+    "downstream_kbps": 100000,
+    "upstream_kbps": 100000
+  },
+  "reused_connection": false,
+  "foreground": true
+}

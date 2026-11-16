@@ -1,0 +1,33 @@
+{
+  "format_version": 1,
+  "call_id": "510e527fade682d1",
+  "resend_count": 0,
+  "start_time": 1794270000000,
+  "elapsed_time": 10003,
+  "sampling_fraction": 1.0,
+  "scheme": "https",
+  "host": "api.test",
+  "port": 443,
+  "method": "GET",
+  "phase": "dns",
+  "type": "dns.timed_out",
+  "step": "dns",
+  "timings": {
+    "dns": 10003
+  },
+  "network": {
+    "state": "connected",
+    "transport": "wifi",
+    "vpn": false,
+    "validated": true,
+    "captive_portal": false,
+    "metered": false,
+    "roaming": false,
+    "downstream_kbps": 30000,
+    "upstream_kbps": 12000,
+    "signal_strength": -50,
+    "blocked": true
+  },
+  "foreground": false,
+  "reused_connection": false
+}

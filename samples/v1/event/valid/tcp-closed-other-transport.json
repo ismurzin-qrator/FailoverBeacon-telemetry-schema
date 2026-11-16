@@ -1,0 +1,37 @@
+{
+  "format_version": 1,
+  "call_id": "9b05688c2b3e6c1f",
+  "resend_count": 0,
+  "start_time": 1794270000000,
+  "elapsed_time": 210,
+  "sampling_fraction": 1.0,
+  "scheme": "https",
+  "host": "api.test",
+  "port": 443,
+  "method": "POST",
+  "phase": "connection",
+  "type": "tcp.closed",
+  "step": "request",
+  "protocol": "http/1.1",
+  "server_ip": "198.18.3.1",
+  "proxy": "direct",
+  "tls": {
+    "version": "TLSv1.3",
+    "cipher": "TLS_AES_256_GCM_SHA384",
+    "issuer": "CN=Failover Stand Test CA"
+  },
+  "reused_connection": true,
+  "timings": {
+    "send": 3
+  },
+  "request_body_bytes": 512,
+  "network": {
+    "state": "connected",
+    "transport": "other",
+    "vpn": false,
+    "validated": false,
+    "captive_portal": false,
+    "metered": false
+  },
+  "foreground": true
+}

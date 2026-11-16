@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Upload metadata",
+  "description": "The first line of an upload body. An invalid line makes the whole upload unreadable, so only what the SDK guarantees is bounded.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["sent_at", "sdk_version", "schema_version", "app_package", "os_api_level"],
+  "properties": {
+    "sent_at": {
+      "description": "Send time, epoch milliseconds, the same clock as the events' start_time.",
+      "type": "integer",
+      "minimum": 0
+    },
+    "sdk_version": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 64
+    },
+    "schema_version": {
+      "description": "The tag of this schema the SDK was built against.",
+      "type": "string",
+      "pattern": "^(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)$"
+    },
+    "app_package": {
+      "description": "The app's package name.",
+      "type": "string",
+      "pattern": "^[A-Za-z][A-Za-z0-9_]*(\\.[A-Za-z][A-Za-z0-9_]*)+$"
+    },
+    "app_version": {
+      "description": "The app's versionName; absent when the app has none.",
+      "type": "string",
+      "minLength": 1
+    },
+    "os_api_level": {
+      "description": "Android API level.",
+      "type": "integer",
+      "minimum": 24
+    },
+    "dropped": {
+      "description": "Events lost since the last accepted upload, by reason; reasons with no loss are absent.",
+      "type": "object",
+      "additionalProperties": false,
+      "minProperties": 1,
+      "properties": {
+        "memory_overflow": { "$ref": "#/$defs/count" },
+        "disk_overflow": { "$ref": "#/$defs/count" },
+        "expired": { "$ref": "#/$defs/count" },
+        "send_error": { "$ref": "#/$defs/count" }
+      }
+    }
+  },
+  "$defs": {
+    "count": {
+      "type": "integer",
+      "minimum": 1
+    }
+  }
+}
