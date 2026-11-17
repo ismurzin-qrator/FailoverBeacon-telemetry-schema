@@ -20,6 +20,7 @@ JSON Schema 2020-12. Objects allow no undeclared properties. The meaning of each
 - Body: UTF-8, one JSON object per line. Line 1 is the upload metadata; every further line is an event. At most 1 MiB before compression.
 - An event's age is `sent_at − start_time`; both come from the same device clock.
 - Delivery is at least once. A receiver drops duplicates by `call_id` + `resend_count` + `start_time`.
+- The SDK waits up to 30 s for the response, then treats the request as unanswered.
 
 | Response | SDK action |
 | --- | --- |
